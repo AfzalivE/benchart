@@ -1,7 +1,7 @@
 // Add compose gradle plugin
 plugins {
-    kotlin("multiplatform") version "1.7.20"
-    id("org.jetbrains.compose") version "1.2.1"
+    kotlin("multiplatform") version "1.8.10"
+    id("org.jetbrains.compose") version "1.3.1"
 }
 group = "com.theapache64.benchart"
 version = "1.0.0-beta01"
@@ -45,8 +45,4 @@ kotlin {
             }
         }
     }
-}
-// Workaround for https://youtrack.jetbrains.com/issue/KT-49124
-rootProject.extensions.configure<org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootExtension> {
-    versions.webpackCli.version = "4.10.0"
 }
