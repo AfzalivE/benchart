@@ -15,7 +15,13 @@ repositories {
 kotlin {
     jvm()
     js(IR) {
-        browser()
+        browser {
+            testTask { 
+                useKarma {
+                    useFirefox()
+                }
+            }
+        }
         binaries.executable()
     }
     sourceSets {

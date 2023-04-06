@@ -4,7 +4,7 @@ import model.FormData
 
 class InvalidBenchmarkDataException(message: String?) : Throwable(message)
 
-class BlockRow(
+data class BlockRow(
     val title: String,
     val data: Map<String, Float>
 )
